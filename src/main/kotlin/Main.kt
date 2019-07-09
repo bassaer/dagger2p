@@ -1,3 +1,4 @@
 fun main() {
-    println("hello")
+    val logger = Logger()
+    logger.generate()
 }
