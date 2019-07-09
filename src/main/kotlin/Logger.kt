@@ -1,6 +1,9 @@
-class Logger {
-    val reader = Reader()
-    val writer = Writer()
+import javax.inject.Inject
+
+class Logger @Inject constructor() {
+
+    @Inject lateinit var reader: Reader
+    @Inject lateinit var writer: Writer
 
     fun generate() {
         reader.read()
