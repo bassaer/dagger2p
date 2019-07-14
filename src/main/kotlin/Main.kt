@@ -1,4 +1,3 @@
 fun main() {
-    val logger = Logger()
-    logger.generate()
+    App().start()
 }
